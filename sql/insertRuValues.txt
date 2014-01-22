@@ -1,0 +1,2 @@
+sqlplus team1/team1@XE @insertRuValues.sql
+pause

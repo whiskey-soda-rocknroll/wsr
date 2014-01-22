@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<code_scheme name="globoforce-java-code-formatting-rules-intellij-idea">
+  <option name="USE_SAME_INDENTS" value="true" />
+  <option name="IGNORE_SAME_INDENTS_FOR_LANGUAGES" value="true" />
+  <option name="OTHER_INDENT_OPTIONS">
+    <value>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="8" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="false" />
+      <option name="LABEL_INDENT_SIZE" value="0" />
+      <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+      <option name="USE_RELATIVE_INDENTS" value="false" />
+    </value>
+  </option>
+  <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+  <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+  <XML>
+    <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+  </XML>
+  <ADDITIONAL_INDENT_OPTIONS fileType="feature">
+    <option name="INDENT_SIZE" value="2" />
+  </ADDITIONAL_INDENT_OPTIONS>
+  <ADDITIONAL_INDENT_OPTIONS fileType="haml">
+    <option name="INDENT_SIZE" value="2" />
+  </ADDITIONAL_INDENT_OPTIONS>
+  <ADDITIONAL_INDENT_OPTIONS fileType="rb">
+    <option name="INDENT_SIZE" value="2" />
+    <option name="CONTINUATION_INDENT_SIZE" value="4" />
+    <option name="TAB_SIZE" value="2" />
+    <option name="USE_RELATIVE_INDENTS" value="true" />
+  </ADDITIONAL_INDENT_OPTIONS>
+  <ADDITIONAL_INDENT_OPTIONS fileType="yml">
+    <option name="INDENT_SIZE" value="2" />
+  </ADDITIONAL_INDENT_OPTIONS>
+  <codeStyleSettings language="HTML">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="8" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JAVA">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="8" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+    <arrangement>
+      <groups>
+        <group>
+          <type>GETTERS_AND_SETTERS</type>
+          <order>KEEP</order>
+        </group>
+      </groups>
+      <rules>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PUBLIC</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PROTECTED</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PACKAGE_PRIVATE</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PRIVATE</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PUBLIC</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PROTECTED</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PACKAGE_PRIVATE</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PRIVATE</MODIFIER>
+              <MODIFIER>STATIC</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PUBLIC</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PROTECTED</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PACKAGE_PRIVATE</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PRIVATE</MODIFIER>
+              <MODIFIER>FINAL</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PUBLIC</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PROTECTED</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PACKAGE_PRIVATE</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>FIELD</TYPE>
+              <MODIFIER>PRIVATE</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <TYPE>FIELD</TYPE>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <TYPE>CONSTRUCTOR</TYPE>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>METHOD</TYPE>
+              <MODIFIER>STATIC</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <TYPE>METHOD</TYPE>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <TYPE>ENUM</TYPE>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <TYPE>INTERFACE</TYPE>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <AND>
+              <TYPE>CLASS</TYPE>
+              <MODIFIER>STATIC</MODIFIER>
+            </AND>
+          </match>
+        </rule>
+        <rule>
+          <match>
+            <TYPE>CLASS</TYPE>
+          </match>
+        </rule>
+      </rules>
+    </arrangement>
+  </codeStyleSettings>
+  <codeStyleSettings language="JSPX">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="8" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JavaScript">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="8" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="LESS">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="8" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="SQL">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="8" />
+      <option name="TAB_SIZE" value="4" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>
+

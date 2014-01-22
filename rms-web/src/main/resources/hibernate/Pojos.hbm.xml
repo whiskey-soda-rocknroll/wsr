@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="by.academy.rms.pojo" default-lazy="false">
+    <class name="Page" table="T_PAGE" lazy="false">
+        <id name="id" type="int" column="F_ID">
+            <generator class="sequence">
+                <param name="sequence">T_PAGE_SEQ</param>
+            </generator>
+        </id>
+        <property name="name" type="string" column="F_NAME"/>
+        <property name="desc" type="string" column="F_DESC"/>
+        <property name="dateChange" type="timestamp" column="F_DATE_CHANGE"/>
+        <set name="pageProperties" table="T_PAGE_PROPERTY" inverse="true" fetch="select">
+            <key column="F_PAGE_ID" not-null="true"/>
+            <one-to-many class="PageProperty"/>
+        </set>
+    </class>
+
+    <class name="PageProperty" table="T_PAGE_PROPERTY">
+        <id name="id" type="int" column="F_ID">
+            <generator class="sequence">
+                <param name="sequence">T_PAGE_PROPERTY_SEQ</param>
+            </generator>
+        </id>
+        <many-to-one name="page" class="Page" fetch="select" column="F_PAGE_ID"/>
+        <many-to-one name="property" class="Property" fetch="select" column="F_PROPERTY_ID"/>
+        <map name="pagePropertyValue" table="T_PAGE_PROPERTY_VALUE">
+            <key column="F_PAGE_PROPERTY_ID"/>
+            <index-many-to-many class="LangCode" column="F_LANG_ID"/>
+            <element type="string" column="F_VALUE"/>
+        </map>
+    </class>
+
+    <class name="Property" table="T_PROPERTY">
+        <id name="id" type="int" column="F_ID">
+            <generator class="sequence">
+                <param name="sequence">T_PROPERTY_SEQ</param>
+            </generator>
+        </id>
+        <property name="name" type="string" column="F_NAME"/>
+        <property name="defaultValue" type="string" column="F_DEFAULT_VALUE"/>
+        <many-to-one name="defaultLangCode" column="F_DEFAULT_LANG_ID" />
+        <set name="pageProperties" table="T_PAGE_PROPERTY" inverse="true" fetch="select">
+            <key column="F_PROPERTY_ID" not-null="true"/>
+            <one-to-many class="PageProperty"/>
+        </set>
+    </class>
+
+    <class name="LangCode" table="T_LANG_CODE">
+        <id name="id" type="int" column="F_ID">
+            <generator class="sequence">
+                <param name="sequence">T_LANG_CODE_SEQ</param>
+            </generator>
+        </id>
+        <property name="lang" type="string" column="F_LANG"/>
+        <property name="countryCode" type="string" column="F_COUNTRY_CODE"/>
+        <property name="langCode" type="string" column="F_LANG_CODE"/>
+    </class>
+
+</hibernate-mapping>
